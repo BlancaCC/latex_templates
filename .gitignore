@@ -1,5 +1,4 @@
-*~
-_*  
+*~  
 *.aux  
 *.bcf
 *.lof
@@ -7,4 +6,16 @@ _*
 *.xml
 *.log
 *.out
-        
+
+#slides 
+*.bbl
+*.blg
+*.bbl
+*.fls
+*.snm
+*.toc
+*.nav
+*.synctex.gz
+*.fdb_latexmk
+
+
