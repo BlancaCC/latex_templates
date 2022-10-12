@@ -1,0 +1,31 @@
+
+\documentclass[english, xcolor=dvipsnames, aspectratio=169]{beamer}
+% packages
+\include{preamble/packages.tex}
+% Define colors variables
+\include{preamble/definitions.tex}
+% Beamer parameters
+\include{preamble/beamer_parameters.tex}
+\include{preamble/commands.tex}
+\include{preamble/variables.tex}
+
+
+\begin{document}
+
+\frame{\titlepage}
+
+% Complete table of contents (ToC)
+% \customToC{hideallsubsections}{}
+\customToC{}{}
+
+%%%%%%% add sections here %%%%%%%
+\include{sections/example.tex}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Import bibliography from file sample.bib
+\begin{frame}[t, allowframebreaks]
+\frametitle{References}
+\bibliography{bibliography}
+\end{frame}
+
+\end{document}

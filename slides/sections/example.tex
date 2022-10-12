@@ -1,0 +1,90 @@
+
+% Section name and highlighted ToC
+\renewcommand{\sectiontitle}{Section}
+\section{\sectiontitle}
+\customToC{currentsection,hideothersubsections}{}
+
+\begin{frame}{\sectiontitle}
+    This is some text in the first frame. This is some text in the first frame. This is some text in the first frame.
+\end{frame}
+
+% Section name and highlighted ToC
+\renewcommand{\subsectiontitle}{Subsection}
+\subsection{\subsectiontitle}
+\begin{frame}{\subsectiontitle}
+    \begin{itemize}
+        \itemj Justified text item with reference \citet{goodfellow2014generative} 
+        \item This is some unjustified text in the frame. This is some unjustified text in the frame. This is some unjustified text in the frame. This is some unjustified text in the frame. This is some unjustified text in the frame.
+    \end{itemize}
+    
+    % Include figure with caption
+    % \includefigure{gan_architecture.png}{Figure caption here}
+        % Include figure with caption
+    \begin{figure}
+    \centering
+        \includegraphics[width=.5\textwidth]{logos/uam-iic.jpeg}
+        \caption{GAN structure}
+        \label{fig:gan_structure}
+    \end{figure}
+\end{frame}
+
+% Section name and highlighted ToC
+\renewcommand{\sectiontitle}{Another section}
+\section{\sectiontitle}
+\customToC{currentsection,hideothersubsections}{}
+
+\begin{frame}{\sectiontitle}
+    This is some text in the first frame. This is some text in the first frame. This is some text in the first frame.
+\end{frame}
+
+% Section name and highlighted ToC
+\renewcommand{\subsectiontitle}{Subsection with math}
+\subsection{\subsectiontitle}
+% \customToC{currentsection,hideothersubsections}{}
+
+\begin{frame}{\subsectiontitle}
+    This is some text in the first frame. This is some text in the first frame. This is some text in the first frame.
+    \begin{itemize}
+    \itemj This is some text in the first frame. This is some text in the first frame. This is some text in the first frame.
+    \itemj Example formula: $$d^2 = ||\mu_1 - \mu_2||^2 + Tr(C_1 + C_2 - 2\sqrt{C_1*C_2})$$ 
+    \end{itemize}
+\end{frame}
+
+\renewcommand{\sectiontitle}{Section without frame}
+\section{\sectiontitle}
+\customToC{currentsection,hideothersubsections}{}
+
+% Section name and highlighted ToC
+\renewcommand{\subsectiontitle}{Subsection with table}
+\subsection{\subsectiontitle}
+
+
+% Section name and highlighted ToC
+\renewcommand{\subsectiontitle}{Subsection with minipages}
+\subsection{\subsectiontitle}
+% \customToC{currentsection,hideothersubsections}{}
+
+% Slide with four figures
+\begin{frame}{\subsectiontitle}
+    \begin{figure}[ht]
+        \begin{minipage}[b]{0.45\linewidth}
+            \centering
+            \includegraphics[width=\textwidth]{logos/uam-iic.jpeg}
+            \caption{Results on CIFAR10}
+            \label{fig:cifar10}
+        \end{minipage}
+        \hspace{0.5cm}
+        \begin{minipage}[b]{0.45\linewidth}
+            \centering
+            \includegraphics[width=\textwidth]{logos/uam-iic.jpeg}
+            \caption{Results on CIFAR100}
+            \label{fig:cifar100}
+        \end{minipage}
+        \begin{minipage}[b]{0.45\linewidth}
+            \centering
+            \includegraphics[width=\textwidth]{logos/uam-iic.jpeg}
+            \caption{Results on ImageNet 1k}
+            \label{fig:imagenet1k}
+        \end{minipage}
+    \end{figure}
+\end{frame}
